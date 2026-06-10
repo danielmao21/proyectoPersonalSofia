@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murillo-Armero: Memoria del Territorio</title>
+    <meta
+      name="description"
+      content="Registro fotografico documental de Murillo y Armero, Tolima, Colombia."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape--one" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape--two" aria-hidden="true"></div>
+
+    <main class="page">
+      <header class="hero">
+        <p class="hero__kicker">Fotografia documental</p>
+        <h1 class="hero__title">Armero: el eco que aún vive bajo la ceniza</h1>
+      </header>
+
+      <section class="intro" aria-label="Introduccion del proyecto">
+        <p class="intro__meta"><strong>Autor:</strong> Sofía Arroyave Mena</p>
+        <p class="intro__meta"><strong>Categoría:</strong> Fotografía Documental</p>
+        <p class="intro__text">
+          Este proyecto es un ensayo fotográfico de 8 actos que explora la dualidad de la naturaleza: su capacidad para conmovernos con su belleza y devastarnos con su fuerza. A través de un recorrido visual que conecta la majestuosidad del Nevado del Ruiz con el suelo santo de Armero, la obra documenta el paisaje actual no como un escenario muerto, sino como un contenedor de memoria viva.
+        </p>
+        <p class="intro__text">
+          La propuesta estética se aleja del amarillismo de la tragedia histórica de 1985; en su lugar, se enfoca en el silencio posterior, en los vestigios que el lodo no pudo borrar y en el diálogo eterno entre la montaña y las ruinas. Las imágenes utilizan una paleta de tonos fríos, desaturados y contrastes de luz natural (neblina, atardeceres) para evocar una atmósfera de respeto, melancolía y reflexión.
+        </p>
+      </section>
+
+      <section class="viewer" aria-label="Galeria fotografica">
+        <div class="viewer__frame">
+          <img
+            id="photo"
+            class="viewer__image"
+            src="assets/img/foto-01.jpeg"
+            alt="Fotografia 1"
+          />
+          <div class="viewer__overlay">
+            <p id="photo-title" class="viewer__photo-title"></p>
+            <p id="photo-description" class="viewer__description"></p>
+          </div>
+          <button id="expand" type="button" class="btn btn--ghost viewer__expand" aria-label="Expandir fotografia">
+            Expandir
+          </button>
+        </div>
+
+        <div class="viewer__controls">
+          <button id="prev" type="button" class="btn" aria-label="Fotografia anterior">
+            Anterior
+          </button>
+          <p id="counter" class="viewer__counter" aria-live="polite"></p>
+          <button id="next" type="button" class="btn" aria-label="Fotografia siguiente">
+            Siguiente
+          </button>
+        </div>
+      </section>
+
+      <dialog id="lightbox" class="lightbox" aria-label="Imagen ampliada">
+        <button id="close-lightbox" type="button" class="btn btn--ghost lightbox__close" aria-label="Cerrar vista ampliada">
+          Cerrar
+        </button>
+        <img id="lightbox-image" class="lightbox__image" src="" alt="" />
+      </dialog>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
