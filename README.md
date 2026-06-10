@@ -6,8 +6,8 @@ Sitio estatico de fotografia documental sobre Murillo y Armero (Tolima, Colombia
 
 - `index.html`: estructura principal del sitio.
 - `styles.css`: estilos y diseno responsive.
-- `script.js`: logica de galeria para mostrar fotografias una a una.
-- `assets/img/`: 8 imagenes de ejemplo (`foto-01.svg` a `foto-08.svg`).
+- `script.js`: logica de galeria para mostrar fotografias una a una y expandirlas.
+- `assets/img/`: 8 imagenes de ejemplo (`foto-01.jpeg` a `foto-08.jpeg`).
 
 ## Publicacion en GitHub Pages
 
@@ -15,7 +15,7 @@ Sitio estatico de fotografia documental sobre Murillo y Armero (Tolima, Colombia
 2. Ve a **Settings > Pages**.
 3. En **Build and deployment**, selecciona:
    - Source: `Deploy from a branch`
-   - Branch: `main` (o la rama que uses)
+   - Branch: `main`
    - Folder: `/ (root)`
 4. Guarda y espera el enlace de publicacion.
 
