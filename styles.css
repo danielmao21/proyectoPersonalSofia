@@ -334,6 +334,31 @@ body {
   z-index: 2;
 }
 
+.contact {
+  max-width: 980px;
+  margin: 28px auto 0;
+  padding: 16px 18px;
+  border-top: 1px solid rgba(16, 24, 32, 0.12);
+  background: rgba(249, 252, 255, 0.56);
+  border-radius: 12px;
+}
+
+.contact__label {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.contact__item {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -403,6 +428,11 @@ body {
   .viewer__expand {
     top: 10px;
     right: 10px;
+  }
+
+  .contact {
+    margin-top: 22px;
+    padding: 14px 14px;
   }
 
   .btn {
